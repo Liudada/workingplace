@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block js %}
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#search").click(function () {
+        $.get("/search/", {"test":"Liudada"});
+    });
+});
+</script>
+{% endblock %}
+
+{% block title %}Search{% endblock %}
+
+{% block content %}
+{% if errors %}
+<ul>
+    {% for error in errors %}
+    <li style="color:red;">{{error}}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<form action="/search/" method="get">
+    <input type="text" name="q">
+    <input type="submit" value="Search">
+</form>
+<div><button id="search">TEST</button></div>
+<div>{{test}}</div>
+{% endblock %}

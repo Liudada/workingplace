@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: liudada
+        psr4_prefix: liudada
+        src_path: app

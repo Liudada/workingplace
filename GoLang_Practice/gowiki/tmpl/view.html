@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.css">
+    <script type="text/javascript" src="/resources/js/jquery.js"></script>
+    <script type="text/javascript" src="/resources/js/bootstrap.js"></script>
+    <title>viewing {{.Title}}</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1>{{.Title}}</h1>
+                <p>[<a href="/edit/{{.Title}}">edit</a>]</p>
+                <div>{{printf "%s" .Body}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

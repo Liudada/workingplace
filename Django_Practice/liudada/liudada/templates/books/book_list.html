@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load poll_extras %}
+
+{% block title %}Book List{% endblock %}
+
+{% block subtitle %}Books{% endblock %}
+
+{% block content %}
+{% if query %}
+<div class="row">
+    <p>You searched for: <strong>{{query}}</strong></p>
+</div>
+{% endif %}
+<div class="row">
+    <div class="col-sm-3"><b>TITLE</b></div>
+    <div class="col-sm-3"><b>PUBLISHER</b></div>
+    <div class="col-sm-3"><b>PUB_DATE</b></div>
+    <div class="col-sm-3"><b>AUTHOR</b></div>
+</div>
+{% for book in books %}
+<div class="row">
+    <div class="col-sm-3">{{book.title | cut:"liudada"}}</div>
+    <div class="col-sm-3">{{book.publisher}}</div>
+    <div class="col-sm-3">{{book.publication_date}}</div>
+    <div class="col-sm-3">{{book.authors.all | getfirst}}</div>
+</div>
+{% empty %}
+<div class="row"><p>No books matched your search criteria.</p></div>
+{% endfor %}
+<div class="row"><p>Found {{books|length}} book{{books|pluralize}}.</p></div>
+{% endblock %}

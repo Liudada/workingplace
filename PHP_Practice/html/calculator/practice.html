@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style type="text/css">
+      body {font-family:sans-serif;}
+    </style>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <title>Calculator3.0</title>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 screenWrapper input-group">
+          <input type="text" class="form-control" id="screen" readonly="readonly" name="show" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-primary change" id="lt">LT</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-primary change" id="rt">RT</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-warning change" id="del">DEL</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-warning change" id="ac">AC</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-danger change" id="off">OFF</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-danger change" id="on">ON</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-default show">7</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-default show">8</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-default show">9</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-info show">(</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-info show">+</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-info show">-</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-default show">4</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-default show">5</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-default show">6</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-info show">)</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-info show">*</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-info show">/</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-default show">1</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-default show">2</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-default show">3</button>
+        </div>
+        <div class="col-xs-6 buttonWrapper">
+          <button class="btn-block btn-info show" id="ans">ans</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-4 buttonWrapper">
+          <button class="btn-block btn-default show">0</button>
+        </div>
+        <div class="col-xs-2 buttonWrapper">
+          <button class="btn-block btn-default show">.</button>
+        </div>
+        <div class="col-xs-6 buttonWrapper">
+          <button class="btn-block btn-info change" id="eq">=</button>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.css">
+    <script type="text/javascript" src="/resources/js/jquery.js"></script>
+    <script type="text/javascript" src="/resources/js/bootstrap.js"></script>
+    <title>editing {{.Title}}</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h1>Editing {{.Title}}</h1>
+                <form action="/save/{{.Title}}" method="POST">
+                    <div><textarea name="body" rows="20" cols="80"></textarea></div>
+                    <div><input type="submit" value="Save"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load poll_extras %}
+
+{% block title %}The current time{% endblock %}
+
+{% block subtitle %}Timestamp series{% endblock %}
+
+{% block content %}
+{% autoescape off %}
+{% autoescape on %}
+<div class="row">It is now {% current_time "%Y-%M-%d %I:%M %p" %}.</div>
+{% endautoescape %}
+<div class="row">from ip: {{ ip_address }}</div>
+{% endautoescape %}
+{% comment %}
+{% upper %}
+{% endcomment %}
+<div class="row">from user: {{ user }}</div>
+{% comment %}
+{% endupper %}
+{% endcomment %}
+{% endblock %}
