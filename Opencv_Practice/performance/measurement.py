@@ -11,7 +11,8 @@ for i in range(10):
 	t2 = time()
 	t[i] = t2 - t1
 mx = t.max()
-best = t.index(mx)
+best = np.arange(10)[t==mx]
+print(t)
 avg = sum(t) / 10
 
-print('10 loops, best of %d: %f ms per loop',(best, avg*10))
+print("10 loops, best of %d: %f ms per loop" % (best[0], avg*10))
