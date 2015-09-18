@@ -1,8 +1,8 @@
 from cv2 import *
 import numpy as np
 
-img1 = imread('miku_kimono.jpg')
-img2 = imread('Eva_46.png')
+img1 = imread('../data/miku_kimono.jpg')
+img2 = imread('../data/Eva_46.png')
 
 rows,cols,channels = img2.shape
 roi = img1[0:rows,0:cols]

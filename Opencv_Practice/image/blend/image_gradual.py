@@ -1,9 +1,9 @@
 from cv2 import *
 import numpy as np
 
-img1 = imread('miku_kimono.jpg')
-img2 = imread('bg02.png')
-img3 = imread('bg01.jpg')
+img1 = imread('../data/miku_kimono.jpg')
+img2 = imread('../data/bg02.png')
+img3 = imread('../data/bg01.jpg')
 
 def nothing(x):
 	pass

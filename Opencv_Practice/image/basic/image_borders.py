@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 BLUE = [255,0,0]
-img1 = imread('miku_kimono.jpg')
+img1 = imread('../data/miku_kimono.jpg')
 b,g,r = split(img1)
 img1 = merge((r,g,b))
 

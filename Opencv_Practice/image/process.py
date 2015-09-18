@@ -1,7 +1,7 @@
 from cv2 import *
 import numpy as np
 
-img = imread('114-4-007.tif')
+img = imread('./data/114-4-007.tif')
 gray,gray,gray = split(img)
 
 for i in range(len(gray)):
